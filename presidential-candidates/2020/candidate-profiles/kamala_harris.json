@@ -1,0 +1,130 @@
+{
+    "name": "Kamala Harris",
+    "gender": "FEMALE",
+    "race": "African American",
+    "dob": {
+        "month": "OCTOBER",
+        "day": 20,
+        "year": 1964
+    },
+    "birthplace": "Oakland, California",
+    "image": "https://bit.ly/2LIJZ19",
+    "headshot": "https://cdn.civil.services/us-senate/headshots/1024x1024/kamala-harris.jpg",
+    "quote": "I believe our country wants and needs some leadership that provides a vision of the country in which everyone could see themselves.",
+    "divorced": false,
+    "electionYear": 2020,
+    "politicalParty": "DEMOCRATIC",
+    "independent": false,
+    "website": "https://kamalaharris.org",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kamala_Harris",
+    "social": [
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/KamalaHarris"
+        },
+        {
+            "name": "Instagram",
+            "url": "https://www.instagram.com/kamalaharris/"
+        },
+        {
+            "name": "Facebook",
+            "url": "https://www.facebook.com/KamalaHarris/"
+        }
+    ],
+    "education": {
+        "highSchool": {
+            "name": "Westmount High School",
+            "year": 1981,
+            "location": "Westmount, Quebec, Canada",
+            "website": "https://duxvitaeratio.ca"
+        },
+        "college": [
+            {
+                "name": "Howard University",
+                "location": "Washington D.C.",
+                "year": 1986,
+                "website": "https://home.howard.edu",
+                "degree": "Bachelor of Arts",
+                "major": "Political Science and Economics"
+            },
+            {
+                "name": "University of California, Hastings College of Law",
+                "location": "San Francisco",
+                "year": 1989,
+                "website": "https://www.uchastings.edu",
+                "degree": "Juris Doctor",
+                "major": "Law"
+            }
+        ]
+    },
+    "spouse": {
+        "name": "Douglas Emhoff",
+        "twitter": "https://twitter.com/douglasemhoff",
+        "wikipedia": "https://en.wikipedia.org/wiki/Douglas_Emhoff",
+        "image": "https://bit.ly/2L0maC6",
+        "occupation": "Lawyer",
+        "marriageYear": 2014
+    },
+    "parents": [
+        {
+            "relationship": "MOTHER",
+            "name": "Shyamala Gopalan"
+        },
+        {
+            "relationship": "FATHER",
+            "name": "Donald Harris"
+        }
+    ],
+    "agenda": [
+        {
+            "name": "Healthcare",
+            "source": "https://kamalaharris.org/issue/health-care/",
+            "preview": ""
+        },
+        {
+            "name": "Economic Justice",
+            "source": "https://kamalaharris.org/issue/economic-justice/",
+            "preview": ""
+        },
+        {
+            "name": "Raising Teacher Pay",
+            "source": "https://kamalaharris.org/issue/raising-teacher-pay/",
+            "preview": ""
+        },
+        {
+            "name": "Climate",
+            "source": "https://kamalaharris.org/issue/climate/",
+            "preview": ""
+        },
+        {
+            "name": "Criminal Justice Reform",
+            "source": "https://kamalaharris.org/issue/criminal-justice-reform/",
+            "preview": ""
+        },
+        {
+            "name": "Action On Gun Violence",
+            "source": "https://kamalaharris.org/issue/action-on-gun-violence/",
+            "preview": ""
+        },
+        {
+            "name": "Immigration",
+            "source": "https://kamalaharris.org/issue/immigration/",
+            "preview": ""
+        },
+        {
+            "name": "LGBTQ Equality",
+            "source": "https://kamalaharris.org/issue/lgbtq-equality/",
+            "preview": ""
+        },
+        {
+            "name": "Government For The People",
+            "source": "https://kamalaharris.org/issue/government-for-the-people/",
+            "preview": ""
+        },
+        {
+            "name": "Government For The People",
+            "source": "https://kamalaharris.org/issue/government-for-the-people/",
+            "preview": ""
+        }
+    ]
+}

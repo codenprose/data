@@ -1,4 +1,6 @@
 # Presidential Candidates
+
+## Individual Contributions
 ```python
 columns = [
     'committee_id',
