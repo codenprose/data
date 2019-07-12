@@ -25,3 +25,6 @@ columns = [
     'election_type'
 ]
 ```
+
+## Candidate Profiles
+[JSON Schema](candidate-profiles/schema.json)

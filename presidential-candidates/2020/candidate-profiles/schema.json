@@ -1,0 +1,334 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Candidate",
+    "definitions": {
+        "Candidate": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "gender": {
+                    "type": "string"
+                },
+                "race": {
+                    "type": "string"
+                },
+                "dob": {
+                    "$ref": "#/definitions/Dob"
+                },
+                "birthplace": {
+                    "type": "string"
+                },
+                "image": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "headshot": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ],
+                    "qt-uri-extensions": [
+                        ".jpg"
+                    ]
+                },
+                "quote": {
+                    "type": "string"
+                },
+                "divorced": {
+                    "type": "boolean"
+                },
+                "electionYear": {
+                    "type": "integer"
+                },
+                "politicalParty": {
+                    "type": "string"
+                },
+                "independent": {
+                    "type": "boolean"
+                },
+                "website": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "wikipedia": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "social": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Social"
+                    }
+                },
+                "education": {
+                    "$ref": "#/definitions/Education"
+                },
+                "spouse": {
+                    "$ref": "#/definitions/Spouse"
+                },
+                "parents": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Parent"
+                    }
+                },
+                "agenda": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Agenda"
+                    }
+                }
+            },
+            "required": [
+                "agenda",
+                "birthplace",
+                "divorced",
+                "dob",
+                "education",
+                "electionYear",
+                "gender",
+                "headshot",
+                "image",
+                "independent",
+                "name",
+                "parents",
+                "politicalParty",
+                "quote",
+                "race",
+                "social",
+                "spouse",
+                "website",
+                "wikipedia"
+            ],
+            "title": "Candidate"
+        },
+        "Agenda": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "source": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "preview": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name",
+                "preview",
+                "source"
+            ],
+            "title": "Agenda"
+        },
+        "Dob": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "month": {
+                    "type": "string"
+                },
+                "day": {
+                    "type": "integer"
+                },
+                "year": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "day",
+                "month",
+                "year"
+            ],
+            "title": "Dob"
+        },
+        "Education": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "highSchool": {
+                    "$ref": "#/definitions/HighSchool"
+                },
+                "college": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/College"
+                    }
+                }
+            },
+            "required": [
+                "college",
+                "highSchool"
+            ],
+            "title": "Education"
+        },
+        "College": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "location": {
+                    "type": "string"
+                },
+                "year": {
+                    "type": "integer"
+                },
+                "website": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "degree": {
+                    "type": "string"
+                },
+                "major": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "degree",
+                "location",
+                "major",
+                "name",
+                "website",
+                "year"
+            ],
+            "title": "College"
+        },
+        "HighSchool": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "year": {
+                    "type": "integer"
+                },
+                "location": {
+                    "type": "string"
+                },
+                "website": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                }
+            },
+            "required": [
+                "location",
+                "name",
+                "website",
+                "year"
+            ],
+            "title": "HighSchool"
+        },
+        "Parent": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "relationship": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name",
+                "relationship"
+            ],
+            "title": "Parent"
+        },
+        "Social": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                }
+            },
+            "required": [
+                "name",
+                "url"
+            ],
+            "title": "Social"
+        },
+        "Spouse": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "twitter": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "wikipedia": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "image": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "occupation": {
+                    "type": "string"
+                },
+                "marriageYear": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "image",
+                "marriageYear",
+                "name",
+                "occupation",
+                "twitter",
+                "wikipedia"
+            ],
+            "title": "Spouse"
+        }
+    }
+}
